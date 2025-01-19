@@ -11,6 +11,7 @@ Made for v13.0.0 of SCP:SL and v7.0.0 of Exiled and onward by creepycats.
 This plugin contains code originally from SCPStats, [you can find its source code here](https://github.com/SCPStats/Plugin/).
 
 ## Installation
+**MER TEST BUILD FROM DISCORD NEEDED **
 **This Plugin Requires MapEditorReborn, [you can download it here](https://github.com/Michal78900/MapEditorReborn/releases)**
 
 After you've installed MapEditorReborn, go to [Releases](https://github.com/creepycats/SCPHats/releases) and download the latest Plugin file.
@@ -73,4 +74,5 @@ s_c_p_cosmetics:
 ```
 If you want to use the schematic hats, simply change `schematic_hats` to true. Make sure your schematics are properly configured.
 
-You can have multiple schematic hats. The `schematic_name` is the name of the MapEditorReborn schematic from your Schematics folder. `hat_names` is a list of different names that will trigger this hat in game when using the command. You can add custom permissions such as in the example shown.
+You can have multiple schematic hats. The `schematic_name` is the name of the MapEditorReborn schematic from your Schematics folder. `hat_names` is a list of different names that will trigger this hat in game when using the command. You can add custom permissions such as in the example shown.  
+THANKS TO creepycats for the original code https://github.com/creepycats/SCPCosmetics  
