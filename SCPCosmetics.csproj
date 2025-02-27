@@ -76,54 +76,54 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>..\..\..\source\repos\Dev\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-Publicized, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\ExMod.Exiled.9.4.0\lib\net48\Assembly-CSharp-Publicized.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MapEditorReborn">
-      <HintPath>..\..\..\source\repos\Dev\MapEditorReborn.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\MapEditorReborn.dll</HintPath>
     </Reference>
     <Reference Include="Mirror">
-      <HintPath>..\..\..\source\repos\Dev\Mirror.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mirror.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Cecil.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Cecil.Mdb.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Pdb">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Cecil.Pdb.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil.Rocks">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Cecil.Rocks.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Posix">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Posix.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Posix.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>..\..\..\source\repos\Dev\Mono.Security.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Pooling">
-      <HintPath>..\..\..\source\repos\Dev\Pooling.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\Pooling.dll</HintPath>
     </Reference>
     <Reference Include="SCPSLAudioApi">
-      <HintPath>..\..\..\source\repos\Dev\SCPSLAudioApi.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\SCPSLAudioApi.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\source\repos\Dev\UnityEngine.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\source\repos\Dev\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\..\..\source\repos\Dev\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>$(EXILED_REFERENCES)\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -131,20 +131,20 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ExMod.Exiled">
-      <Version>9.4.0</Version>
+      <Version>9.6.0-beta3</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.3.3</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\source\repos\Dev\Assembly-CSharp-firstpass.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\MapEditorReborn.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\Mirror.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\Pooling.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\UnityEngine.CoreModule.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\UnityEngine.dll" />
-    <Analyzer Include="..\..\..\source\repos\Dev\UnityEngine.PhysicsModule.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\Assembly-CSharp-firstpass.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\MapEditorReborn.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\Mirror.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\Pooling.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\UnityEngine.CoreModule.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\UnityEngine.dll" />
+    <Analyzer Include="$(EXILED_REFERENCES)\UnityEngine.PhysicsModule.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

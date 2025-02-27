@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+.idea/.idea.SCPCosmetics/.idea/vcs.xml
+.idea/.idea.SCPCosmetics/.idea/indexLayout.xml
+.idea/.idea.SCPCosmetics/.idea/encodings.xml
+.idea/.idea.SCPCosmetics/.idea/discord.xml
+.idea/.idea.SCPCosmetics/.idea/projectSettingsUpdater.xml
+.idea/.idea.SCPCosmetics/.idea/workspace.xml
