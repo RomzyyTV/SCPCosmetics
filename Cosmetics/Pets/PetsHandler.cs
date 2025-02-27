@@ -383,7 +383,7 @@ namespace SCPCosmetics.Cosmetics.Pets
             try
             {
                 if (args.Player == null)
-                    return;
+                    return; 
 
                 if (IsPet(args.Player))
                 {

@@ -74,7 +74,10 @@ namespace SCPCosmetics.Cosmetics.Pets
                 _targetPos.y = PetNPC.Position.y;
                 PetNPC.LookAt(_targetPos);
             }
-            catch (Exception e) { }
+            catch (Exception e)
+            {
+                Log.Info(e);
+            }
 
             if (Owner.ReferenceHub.roleManager.CurrentRole is FpcStandardRoleBase ownerFPC && ownerFPC.FpcModule.ModuleReady && PetNPC.ReferenceHub.roleManager.CurrentRole is FpcStandardRoleBase petFPC && petFPC.FpcModule.ModuleReady)
             {

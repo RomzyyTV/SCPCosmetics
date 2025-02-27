@@ -58,16 +58,34 @@ namespace SCPCosmetics.Cosmetics.Hats
 
         public static bool IsHat(ItemPickupBase ipb)
         {
+            if (ipb == null)
+                return false;
+
             Pickup check = Pickup.Get(ipb);
+            if (check == null)
+                return false;
+
             foreach (Player player in Player.List)
             {
+                if (player == null || player.GameObject == null)
+                {
+                    continue;
+                }
+
                 if (player.GameObject.TryGetComponent(out HatComponent hatComp))
                 {
+                    if (hatComp == null)
+                    {
+                        continue;
+                    }
+
                     return hatComp._hatPickupSerial == check.Serial;
                 }
             }
+
             return false;
         }
+
 
         public static bool TryGetHat(ItemPickupBase ipb, out HatComponent hatComp)
         {

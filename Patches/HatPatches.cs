@@ -131,8 +131,18 @@
         [HarmonyPrefix]
         private static bool Prefix(ref PickupPhysicsModule __instance, Action<NetworkWriter> writerMethod)
         {
+            if (__instance == null || __instance.Pickup == null)
+            {
+                return true;
+            }
+            
             if (HatsHandler.IsHat(__instance.Pickup) && HatsHandler.TryGetHat(__instance.Pickup, out HatComponent hatComp))
             {
+                if (hatComp == null)
+                {
+                    return true;
+                }
+
                 if (hatComp._hasSyncedPickup)
                     return false;
                 else
