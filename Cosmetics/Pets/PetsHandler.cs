@@ -107,9 +107,14 @@ namespace SCPCosmetics.Cosmetics.Pets
         {
             foreach (Player player in Player.List)
             {
-                if (player.GameObject.TryGetComponent(out PetComponent petComp))
+                if (player.GameObject == null) continue;
+
+                if (player.GameObject.TryGetComponent(out PetComponent petComp) && petComp != null)
                 {
-                    if (petComp.PetNPC.ReferenceHub == refHub) return true;
+                    if (petComp.PetNPC != null && petComp.PetNPC.ReferenceHub != null)
+                    {
+                        if (petComp.PetNPC.ReferenceHub == refHub) return true;
+                    }
                 }
             }
             return false;
